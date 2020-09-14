@@ -1,5 +1,5 @@
 FROM golang:1.13-alpine AS builder
-WORKDIR $GOPATH/src/github.com/bmcstdio/docker-multi-stage-builds
+WORKDIR $GOPATH/src/github.com/tmckayus/docker-multi-stage-builds
 COPY . .
 RUN ls
 RUN go build -o /app ./main.go
